@@ -1,10 +1,15 @@
 ## Data-Structure-Project
 
 Team Members:
+
   Name                         Roll              E-mail
+  
 1.Chandrajeet Choudhary      201601017         chandrajeet.c16@iiits.in
+
 2.Wasim Ishaq Khan           201601107         wasim.i16@iiits.in
+
 3.Kaustubh Pandey            201601041         kaustubh.p16@iiits.in
+
 4.Prashant Kumar Mahanta     201601066         prashantkumar.m16@iiits.in
 
 Overview:
