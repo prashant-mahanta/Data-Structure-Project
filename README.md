@@ -1,4 +1,4 @@
-# Data-Structure-Project
+## Data-Structure-Project
 
 Team Members:
   Name                         Roll              E-mail
@@ -29,7 +29,8 @@ The MAIN function:
   *************************************************************************************************************************************************************************************
                                               Detailed Description
   Functions:
-  1) void AddRecords(BST *head, TRIE *trie)-
+  ## 1) void AddRecords(BST *head, TRIE *trie)-
+  
 	         1.1. Defining a BST tree structure with 5 fields
 
 	         1.2. Defining a trie structure
@@ -71,12 +72,15 @@ The MAIN function:
 			                                   It then calls insert function which inserts temp into the BST.
 
 
-2) void PrintRecords(BST *list)-
+## 2) void PrintRecords(BST *list)-
+
 		To print all the records stored in Binary Search Tree. It accepts the head of BST as input and performs inorder traversal to print the tree.
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-3) Search()-
+  
+## 3) Search()-
+
           This function provides two options-(1)To search on the basis of mobile number (2)To search on the basis of name
     (1)   ->SEARCHING WHETHER A MOBILE NUMBER IS THERE IN THE DATABASE(BST) OR NOT:
     3.1.void Search(BST *list)
@@ -92,7 +96,8 @@ The MAIN function:
 
 
 
-(2)  ->PRINTING ALL THE NAMES BEGINING WITH A PREFIX:
+## (2) PRINTING ALL THE NAMES BEGINING WITH A PREFIX:
+
         SEARCHING ALL THE NAMES BEGINING WITH A PARTICULAR PREFIX AND THEN SUBSEQUENTLY PRINTING THEM USING TRIE DATA STRUCTURE.
 3.2.  void Trie(BST *list, TRIE *trie)
 	3.2.1. Creating a trie data structure with two fields:
@@ -128,7 +133,8 @@ The MAIN function:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-4)  void getDate(BST *list)-
+## 4)  void getDate(BST *list)-
+
 The function ____getDate():
  Checks who all are in the defaulter's(didn't used from last two months) list :
   ->In this function we have to go to each note of the BST and
@@ -175,7 +181,8 @@ Description:
 __________________________________________________________________________________________________
 __________________________________________________________________________________________________
 
-5.1. int month(int months,int year):
+### 5.1. int month(int months,int year):
+
                 This function accepts the month and year as input and returns the total number of
                 days starting from January till the end of that month.Case of leap year is also
                 checked.The number of days of each of the month is stored in an array. The days
@@ -183,7 +190,8 @@ ________________________________________________________________________________
 		
 -------------------------------------------------------------------------------------------------------
 
-5.2. int days(int d1,int d2,int m1,int m2,int y1,int y2):
+### 5.2. int days(int d1,int d2,int m1,int m2,int y1,int y2):
+
           This function calculates the number of days betweentwo dates. Say the date D1 is older than D2.
           Then we initially take all the days of the year in D1 and add all the days of the years in between.
           We have till now not added the number of days in the year of D2. Now we subtract the extra days added
@@ -193,7 +201,8 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________________________
 ___________________________________________________________________________________________________________
 
-5.3. BST* traverse(BST *root,BST *parent):
+### 5.3. BST* traverse(BST *root,BST *parent):
+
         This function takes two args- root and parent, both of which are initially the same. root changes each
         time in recursive call and acts like current node.The parent is always the parent of the current node
         Finally, this function returns the address of the LAST NODE of the binary search tree.
@@ -201,12 +210,14 @@ ________________________________________________________________________________
 	
 --------------------------------------------------------------------------------------------------------------
 
-5.4. void overwrite(BST *node,BST *new):
+### 5.4. void overwrite(BST *node,BST *new):
+
       This function accepts two nodes- node and new and overwrites the data of new in node
       
 --------------------------------------------------------------------------------------------------------------
 
-5.5. void deleteNode(BST *root,BST *node):
+### 5.5. void deleteNode(BST *root,BST *node):
+
           This function uses the traverse and overwrite function to delete a node from a Binary Search Tree.
           It performs the following:
           ->Find the last node of tree
@@ -216,7 +227,8 @@ ________________________________________________________________________________
 _____________________________________________________________________________________________________________
 _____________________________________________________________________________________________________________
 
-5.6. void deleteNodeIfTrue(BST *root,BST *node):
+### 5.6. void deleteNodeIfTrue(BST *root,BST *node):
+
           This function performs in the following way:
           ->Calculate the difference b/w LastUse and currdate by calling --days()--function
             ->If difference>=90 days(3 months)
@@ -225,21 +237,24 @@ ________________________________________________________________________________
 _____________________________________________________________________________________________________________
 _____________________________________________________________________________________________________________
 
-4.7. void preorder(BST *root,BST *head):
+### 5.7. void preorder(BST *root,BST *head):
+
             This function simply performs the preorder traversal(left,root,right) of tree and calls the
             --deleteNodeIfTrue()--function to check if the node has to be deleted or not
 	    
 _______________________________________________________________________________________________________________
 _______________________________________________________________________________________________________________
 
-5.8. void inorder(FILE *f,BST *root):
+### 5.8. void inorder(FILE *f,BST *root):
+
             This function accepts the records file address and root of BinarySearchTree and rewrites the whole data of
             tree into the records file. The traversal is done in inorder fashion.
 	    
 _______________________________________________________________________________________________________________
 
 
-5.9. void delete(BST *head):
+### 5.9. void delete(BST *head):
+
             This is the main delete function.
             ->Calls the --preorder()-- function to perform the delete task.
             ->Writes the deleted records in a new file delete history.
