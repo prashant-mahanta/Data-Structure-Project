@@ -11,7 +11,9 @@ Overview:
 For our project we chose Binary Search Tree(BST) as our data structure as the main focus of our project
 was on searching records and BST has average time complexity O(log n) and worst case O(n) for search, delete
 and insert operations. For searching records we have also used Trie data structure to search by name.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+-----------------------------------------------------------------------------------
+
 The MAIN function:
   The main function automatically calls the --Records()-- function each time on startup which inserts the data
   in a Binary Search Tree from our database file "Records.txt" which consists of existing records.
@@ -122,8 +124,10 @@ The MAIN function:
 
 	3.2.6. Function t performs the following tasks:
 		            ->For each name whose prefix is the prefix entered by the user, it calls a function PrintDetails which prints all the details of that name.
+			    
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 4)  void getDate(BST *list)-
 The function ____getDate():
  Checks who all are in the defaulter's(didn't used from last two months) list :
@@ -149,8 +153,10 @@ The function ____getDate():
                                     1 : if the difference between present and last used date is 60 to 90 days
                                             ->then call printMessage function to send SMS and Offer to the customer
                                     0 : else
+				    
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 5) delete()-
 
 Sub-Functions:
@@ -168,63 +174,77 @@ Sub-Functions:
 Description:
 __________________________________________________________________________________________________
 __________________________________________________________________________________________________
+
 5.1. int month(int months,int year):
                 This function accepts the month and year as input and returns the total number of
                 days starting from January till the end of that month.Case of leap year is also
                 checked.The number of days of each of the month is stored in an array. The days
                 are added till the input month and returned.
+		
 -------------------------------------------------------------------------------------------------------
+
 5.2. int days(int d1,int d2,int m1,int m2,int y1,int y2):
           This function calculates the number of days betweentwo dates. Say the date D1 is older than D2.
           Then we initially take all the days of the year in D1 and add all the days of the years in between.
           We have till now not added the number of days in the year of D2. Now we subtract the extra days added
           (When we took all days of year(D1)) and add the left over days of D2.
           Both of these are done using --month()--function
+	  
 ___________________________________________________________________________________________________________
 ___________________________________________________________________________________________________________
+
 5.3. BST* traverse(BST *root,BST *parent):
         This function takes two args- root and parent, both of which are initially the same. root changes each
         time in recursive call and acts like current node.The parent is always the parent of the current node
         Finally, this function returns the address of the LAST NODE of the binary search tree.
         At the same time its address in the parent is made NULL
+	
 --------------------------------------------------------------------------------------------------------------
+
 5.4. void overwrite(BST *node,BST *new):
       This function accepts two nodes- node and new and overwrites the data of new in node
+      
 --------------------------------------------------------------------------------------------------------------
+
 5.5. void deleteNode(BST *root,BST *node):
           This function uses the traverse and overwrite function to delete a node from a Binary Search Tree.
           It performs the following:
           ->Find the last node of tree
           ->Overwrite the node to be deleted with the last node
           ->free the last node
+	  
 _____________________________________________________________________________________________________________
 _____________________________________________________________________________________________________________
+
 5.6. void deleteNodeIfTrue(BST *root,BST *node):
           This function performs in the following way:
           ->Calculate the difference b/w LastUse and currdate by calling --days()--function
             ->If difference>=90 days(3 months)
               **DELETE THE NODE BY --deleteNode()-- function
+	      
 _____________________________________________________________________________________________________________
 _____________________________________________________________________________________________________________
+
 4.7. void preorder(BST *root,BST *head):
             This function simply performs the preorder traversal(left,root,right) of tree and calls the
             --deleteNodeIfTrue()--function to check if the node has to be deleted or not
+	    
 _______________________________________________________________________________________________________________
 _______________________________________________________________________________________________________________
+
 5.8. void inorder(FILE *f,BST *root):
             This function accepts the records file address and root of BinarySearchTree and rewrites the whole data of
             tree into the records file. The traversal is done in inorder fashion.
+	    
 _______________________________________________________________________________________________________________
-###############################################################################################################
+
+
 5.9. void delete(BST *head):
             This is the main delete function.
             ->Calls the --preorder()-- function to perform the delete task.
             ->Writes the deleted records in a new file delete history.
             ->Calls --inorder()-- function to update the records file.
-#################################################################################################################
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------------------------------------------------------------------------------------------------------
 
