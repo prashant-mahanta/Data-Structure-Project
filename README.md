@@ -270,4 +270,4 @@ ________________________________________________________________________________
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-This project was done for Datastructure course in the 2nd Semester
+This project was done for Datastructure course in the 2nd Semester of B.Tech at IIIT Sri City.
