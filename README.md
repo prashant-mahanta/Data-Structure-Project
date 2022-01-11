@@ -10,7 +10,6 @@ Team Members:
 
 3.Kaustubh Pandey            201601041         kaustubh.p16@iiits.in
 
-4.Prashant Kumar Mahanta     201601066         prashantkumar.m16@iiits.in
 
 Overview:
 For our project we chose Binary Search Tree(BST) as our data structure as the main focus of our project
