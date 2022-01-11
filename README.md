@@ -12,6 +12,8 @@ Team Members:
 
 4.Prashant Kumar Mahanta     201601066         prashantkumar.m16@iiits.in
 
+5. Prashant Mahanta          S20160010066      prashantkumar.m23@gmail.com
+
 Overview:
 For our project we chose Binary Search Tree(BST) as our data structure as the main focus of our project
 was on searching records and BST has average time complexity O(log n) and worst case O(n) for search, delete
@@ -268,3 +270,4 @@ ________________________________________________________________________________
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+This project was done for Datastructure course in the 2nd Semester
