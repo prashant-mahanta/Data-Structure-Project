@@ -4,9 +4,11 @@
 #include<string.h>
 #include<unistd.h>
 #include<time.h>
+
 //FindPhoneNumber function does the following tasks:
 //checks whether a given phone number is there in the database.i.e, in the BST or not.
 //returns 1 if the phone number is not in the database and 0 otherwise	
+
 int FindPhoneNumber(BST *root, char *phoneNumber,int check)
 {
 	if(root==NULL)

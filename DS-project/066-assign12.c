@@ -18,6 +18,7 @@
 /*
 returns number of days between present date from january of that particular year
 */
+
 int month(int a,int yy,int mon[]){
     int x=0,c;
     for(c=0;c<a-1;c++){
