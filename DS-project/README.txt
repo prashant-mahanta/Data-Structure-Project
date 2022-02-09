@@ -6,10 +6,12 @@ Team Members:
 4.Prashant Kumar Mahanta     201601066         prashantkumar.m16@iiits.in
 
 Overview:
+
 For our project we chose Binary Search Tree(BST) as our data structure as the main focus of our project
 was on searching records and BST has average time complexity O(log n) and worst case O(n) for search, delete
 and insert operations. For searching records we have also used Trie data structure to search by name.
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 The MAIN function:
   The main function automatically calls the --Records()-- function each time on startup which inserts the data
   in a Binary Search Tree from our database file "Records.txt" which consists of existing records.

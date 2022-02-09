@@ -32,11 +32,12 @@ char name[100];
 int x=0,co=0;
 
 //----------------------------------------------------------------------------------------------------------
-//C2I function does the following tasks:
-//Converts a character to an integer by converting:
-//lower case characters to integers from 0-25
-//space to 26 
-//uppercase characters to integers in the inclusive range of 27-53
+/*C2I function does the following tasks:
+ Converts a character to an integer by converting:
+ lower case characters to integers from 0-25
+ space to 26 
+ uppercase characters to integers in the inclusive range of 27-53
+*/
 int C2I(char ch){
 	if((int)ch==32)
 		return 26;
